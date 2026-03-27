@@ -1,0 +1,13 @@
+{
+  "title": "O Senhor dos Anéis",
+  "original_title": "Lord of the Rings",
+  "is_movie": true,
+  "imdb_rating": 8.8,
+  "year": 2012,
+  "charcters": [
+    "Frodo",
+    "Sam",
+    "Legolas"
+  ],
+  "budget": null
+}

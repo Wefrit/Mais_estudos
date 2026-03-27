@@ -1,0 +1,31 @@
+import random
+
+print('random range:')
+r_range = random.randrange(10,100,5)
+print(r_range)
+print()
+print('randint')
+i_range = random.randint(1,100)
+print(i_range)
+print()
+print('random uniform')
+u_range = random.uniform(10,100)
+print(u_range)
+print()
+print('random shuffle')
+nomes = ['Jelha', 'Suco','Vruna','Soilir','Lefoce']
+random.shuffle(nomes)
+print(nomes)
+print()
+print('random sample')
+novos_nomes = random.sample(nomes, k=2)
+print(novos_nomes)
+print()
+print('random choices')
+outros_nomes = random.choices(nomes,k=3)
+print(outros_nomes)
+print()
+print('random choice')
+print(random.choice(nomes))
+
+
