@@ -1,0 +1,10 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.vscode/
+
+# Ambiente virtual
+venv/
+venv2/
