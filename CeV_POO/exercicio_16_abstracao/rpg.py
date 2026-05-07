@@ -34,4 +34,3 @@ class Mago(Personagem):
         super().__init__(nome, vida)
         self.golpes = ['Bola de Fogo', 'Magia','Sopro Congelante', 'Ventania']
         self.curas = ['Poção de cura', 'Magia de heal']
-

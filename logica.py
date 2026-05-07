@@ -199,18 +199,61 @@ def idade_absoluta():
 # 16 - Faça um algoritmo que leia três valores que representam os três lados de um triângulo e verifique se são válidos, determine se o triângulo é 
 # equilátero, isósceles ou escaleno.
 
+def triangulo(x, y, z):
+    if x + y <= z or x + z <= y or y + z <= x:
+        return('Nao é um triangulo válido')
+    else:
+        if x == z == y:
+            return('É um triângulo equilátro')
+        elif x != z != y:
+            return('É um triângulo escaleno')
+        else:
+            return('É um triângulo isósceles')
+
+
+
 # 17 - Faça um algoritmo que leia uma temperatura em Fahrenheit e calcule a temperatura correspondente em grau Celsius. Imprima na tela as duas temperaturas.
+
+def FtoC(x):
+    C = 5 * ((x - 32) / 9)
+    return(f'{x}ºF é equivalente a {C:.2f}ºc')
 
 # Fórmula: C = (5 * ( F-32) / 9)
 
-# 18 - Francisco tem 1,50m e cresce 2 centímetros por ano, enquanto Sara tem 1,10m e cresce 3 centímetros por ano. Faça um algoritmo que calcule e imprima na tela em quantos anos serão necessários para que Francisco seja maior que Sara.
-
 # 19 - Faça um algoritmo que imprima na tela a tabuada de 1 até 10.
+def tabuada(x):
+    return (f'{x} * 1 = {x * 1}\n'
+                f'{x} * 2 = {x * 2}\n'
+                f'{x} * 3 = {x * 3}\n'
+                f'{x} * 4 = {x * 4}\n'
+                f'{x} * 5 = {x * 5}\n'
+                f'{x} * 6 = {x * 6}\n'
+                f'{x} * 7 = {x * 7}\n'
+                f'{x} * 8 = {x * 8}\n'
+                f'{x} * 9 = {x * 9}\n'
+                f'{x} * 10 = {x * 10}\n')
+
 
 # 20 - Faça um algoritmo que receba um valor inteiro e imprima na tela a sua tabuada.
+def tabuada(x):
+    return (f'{x} * 1 = {x * 1}\n'
+                f'{x} * 2 = {x * 2}\n'
+                f'{x} * 3 = {x * 3}\n'
+                f'{x} * 4 = {x * 4}\n'
+                f'{x} * 5 = {x * 5}\n'
+                f'{x} * 6 = {x * 6}\n'
+                f'{x} * 7 = {x * 7}\n'
+                f'{x} * 8 = {x * 8}\n'
+                f'{x} * 9 = {x * 9}\n'
+                f'{x} * 10 = {x * 10}\n')
 
 # 21 - Faça um algoritmo que mostre um valor aleatório entre 0 e 100.
 
+def random():
+    from random import randint
+    n = randint(0,100)
+    return n
+print(random())
 # 22 - Faça um algoritmo que leia dois valores inteiros A e B, imprima na tela o quociente e o resto da divisão inteira entre eles.
 
 # 21 - Faça um algoritmo que efetue o cálculo do salário líquido de um professor. As informações fornecidas serão: valor da hora aula, número de aulas lecionadas no mês e percentual de desconto do INSS. Imprima na tela o salário líquido final.
