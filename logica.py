@@ -253,13 +253,18 @@ def random():
     from random import randint
     n = randint(0,100)
     return n
-print(random())
 # 22 - Faça um algoritmo que leia dois valores inteiros A e B, imprima na tela o quociente e o resto da divisão inteira entre eles.
 
-# 21 - Faça um algoritmo que efetue o cálculo do salário líquido de um professor. As informações fornecidas serão: valor da hora aula, número de aulas lecionadas no mês e percentual de desconto do INSS. Imprima na tela o salário líquido final.
+def quociente():
+    x = int(input('Digite um numero inteiro: '))
+    y = int(input('Digite outro numero inteiro: '))
+    return print(f'{x} / por {y} é: {x/y:.2f} o resto da divisão é {x%y}')
 
-# 22 - Faça um algoritmo que calcule a quantidade de litros de combustível gastos em uma viagem, sabendo que o carro faz 12km com um litro. Deve-se fornecer ao usuário o tempo que será gasto na viagem a sua velocidade média, distância percorrida e a quantidade de litros utilizados para fazer a viagem.
+# 21 - Faça um algoritmo que efetue o cálculo do salário líquido de um professor.
+#  As informações fornecidas serão: valor da hora aula, número de aulas lecionadas no mês e percentual de desconto do INSS. 
+# Imprima na tela o salário líquido final.
+def salario(valor_hora,n_aula,desconto):
+    bruto = valor_hora * n_aula
+    total = bruto - (bruto * (desconto / 100)) 
+    print(f'O valor do salário líquido é de {total}')
 
-# Fórmula: distância = tempo x velocidade.
-
-#             litros usados = distância / 12.
